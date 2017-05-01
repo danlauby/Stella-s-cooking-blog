@@ -1,0 +1,17 @@
+<?php
+function custom_follow_follow_networks_alter(&$networks, $uid = 0) {
+  // Add a network.
+  $networks[$uid]['imdb'] = array(
+    'title' => t('IMDB'),
+    'domain' => 'imdb.com',
+  );
+
+  $networks[$uid]['drupal'] = array(
+    'title' => t('Drupal'),
+    'domain' => 'drupal.org',
+  );
+  $networks[$uid]['github']= array(
+    'title' => t('Github'),
+    'domain'=> 'github.com',
+  );
+}
