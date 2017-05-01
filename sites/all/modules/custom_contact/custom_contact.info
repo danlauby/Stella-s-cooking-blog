@@ -1,0 +1,5 @@
+name = Custom Contact
+description = Hide checkbox to hide 'send copy to yourself' and 'subject' field.
+package = Custom modules
+core = 7.x
+files[] = custom_contact.module
