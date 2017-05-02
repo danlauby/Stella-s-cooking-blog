@@ -5,6 +5,7 @@ function custom_contact_form_alter(&$form, &$form_state, $form_id) {
         $form['copy']['#access'] = 0;
         // $form['copy']['#default_value'] = 1;
         $form['subject']['#default_value']= t('Feedback');
+        // $form['subject']['#access'] = 0;
     }
     // print '<pre>';
     // print_r($form);
