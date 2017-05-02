@@ -10,10 +10,10 @@ function support_form_alter(&$form, &$form_state, $form_id) {
             $form['revision_information'] = null;
             $form['author'] = null;
             $form['options'] = null;
-            // print '<pre>';
-            // print_r($form);
-            // print '</pre>';
-            // exit;
+        //     print '<pre>';
+        //     print_r($form);
+        //     print '</pre>';
+        //     exit;
         }
 
 
