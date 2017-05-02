@@ -1,0 +1,6 @@
+name = Support
+description = A simple form that only allows custom content types
+package = Custom modules
+core = 7.x
+files[] = support.module
+ 

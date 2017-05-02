@@ -1,0 +1,20 @@
+<?php
+
+function support_form_alter(&$form, &$form_state, $form_id) {
+    $user_level = $GLOBALS['user']->roles;
+
+        if( $form_id === 'recipe_node_form' && $user_level[2]) {
+            $form['menu'] = null;
+            $form['path'] = null;
+            $form['comment_settings'] = null;
+            $form['revision_information'] = null;
+            $form['author'] = null;
+            $form['options'] = null;
+            // print '<pre>';
+            // print_r($form);
+            // print '</pre>';
+            // exit;
+        }
+
+
+}
